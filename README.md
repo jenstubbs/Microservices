@@ -135,4 +135,12 @@ Lab 2
 - DNS-based service discovery works in Kubernetes because each service is assigned a DNS name that map to the service's IP address.  Service discovery is a core requiremet because services are constantly evolving, locations change frequently, and applications need reliable communication.
 
 ## 5. 
-- I believe it is more effective to run applicaitons as multiple containerized services managed by kubernetes.  Services can be scaled independetly, instead of the whole application.  If one pod or container fails, Kubernetes will restart it or replace it.  Kubernetes provides built in communication between services.  All in all Kubernetes is easier to manage complex applications.  
+- I believe it is more effective to run applicaitons as multiple containerized services managed by kubernetes.  Services can be scaled independetly, instead of the whole application.  If one pod or container fails, Kubernetes will restart it or replace it.  Kubernetes provides built in communication between services.  All in all Kubernetes is easier to manage complex applications.
+
+
+## Kubernetes Diagram 
+<img width="321" height="521" alt="Screenshot 2026-02-07 at 7 08 20 PM" src="https://github.com/user-attachments/assets/9924328e-5aff-4db3-8c51-bc7658e6db08" />
+
+
+
+
