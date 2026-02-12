@@ -96,11 +96,11 @@
 ### Step 1 
 <img width="901" height="79" alt="Screenshot 2026-02-11 at 8 55 57 PM" src="https://github.com/user-attachments/assets/2d24d486-72b8-4110-88e5-25703f128384" />
 
-
+- This shows that both Kubernetes resources were successfully created.  Now other services can reliably communicate with products microservice using the DNS name products-service.  
 ### Step 2 
 <img width="816" height="50" alt="Screenshot 2026-02-11 at 8 56 17 PM" src="https://github.com/user-attachments/assets/85cb16b7-0a63-4bde-8bec-d056ec863a6a" />
 
-- Shows the deployment status 
+- Shows the deployment status. 
 
 ###  Step 3 
 <img width="807" height="49" alt="Screenshot 2026-02-11 at 8 56 41 PM" src="https://github.com/user-attachments/assets/6a0ab61e-5bc6-4d37-a4ec-f3692539121a" />
@@ -122,6 +122,7 @@
 #### A. 
 <img width="864" height="95" alt="Screenshot 2026-02-11 at 9 00 10 PM" src="https://github.com/user-attachments/assets/deb67d68-fc76-4ea8-b297-ef3e814ad142" />
 
+- This command is showing the verification that the deployment is healthy and seeing where the pods are running in the cluster.  
 
 #### B. 
 <img width="983" height="32" alt="Screenshot 2026-02-11 at 9 00 32 PM" src="https://github.com/user-attachments/assets/6efc99a1-4aa6-40f5-bda7-4ace19495c45" />
