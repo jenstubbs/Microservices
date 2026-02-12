@@ -168,10 +168,12 @@
 ### Step 7.1
 <img width="706" height="582" alt="Screenshot 2026-02-11 at 9 05 32 PM" src="https://github.com/user-attachments/assets/3283fb7b-dd51-4d7a-98c0-9951aee1d8d2" />
 
+- In this command it displays the contents of orders.yaml file, which contains the Kubernetes configuration for deploying the order microservice.  
 
 ### Step 7.2 
 <img width="849" height="244" alt="Screenshot 2026-02-11 at 9 06 26 PM" src="https://github.com/user-attachments/assets/ed372b45-bfce-4bfe-bc3f-9c954fb27f68" />
 
+- This screenshot shows multiple command being ran, but the first command navigates the manifests directory.  The second command apply the orders configuration, the third one checks the deployment status, the fourth command checks the individual pods, and the last one checks the service.  
 
 ### Step 7.3 
 <img width="1119" height="357" alt="Screenshot 2026-02-11 at 9 06 54 PM" src="https://github.com/user-attachments/assets/5b78afa5-31d5-4b85-bf3a-df335ff4a96f" />
@@ -181,6 +183,7 @@
 ### Step 7.4 
 <img width="1201" height="132" alt="Screenshot 2026-02-11 at 9 07 36 PM" src="https://github.com/user-attachments/assets/d6314824-0cca-4eb3-b6a3-8116fca59541" />
 
+- These commands show the orders microservice is running successfully, the orders-service DNS name is resolving correctly, the API endpoints are working, and internal service to service communicaiton if functioning.  
 ### Step 7.5 
 <img width="1224" height="227" alt="Screenshot 2026-02-11 at 9 08 04 PM" src="https://github.com/user-attachments/assets/7741f7aa-783f-4eb3-9cd0-70d123a45dbc" />
 
@@ -205,6 +208,6 @@
 
 <img width="960" height="137" alt="Screenshot 2026-02-11 at 9 12 37 PM" src="https://github.com/user-attachments/assets/b3236150-fe77-469b-bfc1-ca7fda4b03bb" />
 
-
+- This task shows the clean up command, which basically delets everything thats been created to ensure it does not keep running.  
 
 
