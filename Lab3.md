@@ -121,29 +121,54 @@
 <img width="775" height="47" alt="Screenshot 2026-02-11 at 9 02 30 PM" src="https://github.com/user-attachments/assets/edab46bf-cda3-405b-a23a-48af6499d288" />
 
 ### Step 9 
+<img width="1019" height="333" alt="Screenshot 2026-02-11 at 9 03 12 PM" src="https://github.com/user-attachments/assets/4f6c3b13-1e60-43a9-b2c7-0517c59679e3" />
+
+<img width="1204" height="98" alt="Screenshot 2026-02-11 at 9 03 34 PM" src="https://github.com/user-attachments/assets/430ccb7a-cd9d-4226-a805-1b0b07ac9069" />
 
 ### Step 10 
-
 #### A. 
+<img width="1172" height="35" alt="Screenshot 2026-02-11 at 9 04 04 PM" src="https://github.com/user-attachments/assets/1c715eac-4946-423a-925d-39a18235cc98" />
 
 #### B. 
+<img width="1221" height="52" alt="Screenshot 2026-02-11 at 9 04 25 PM" src="https://github.com/user-attachments/assets/3c97d42b-2cd0-47af-be80-31533cb775ce" />
+
 
 ## Task 7
-
 ### Step 7.1
+<img width="706" height="582" alt="Screenshot 2026-02-11 at 9 05 32 PM" src="https://github.com/user-attachments/assets/3283fb7b-dd51-4d7a-98c0-9951aee1d8d2" />
+
 
 ### Step 7.2 
+<img width="849" height="244" alt="Screenshot 2026-02-11 at 9 06 26 PM" src="https://github.com/user-attachments/assets/ed372b45-bfce-4bfe-bc3f-9c954fb27f68" />
+
 
 ### Step 7.3 
+<img width="1119" height="357" alt="Screenshot 2026-02-11 at 9 06 54 PM" src="https://github.com/user-attachments/assets/5b78afa5-31d5-4b85-bf3a-df335ff4a96f" />
+
 
 ### Step 7.4 
+<img width="1201" height="132" alt="Screenshot 2026-02-11 at 9 07 36 PM" src="https://github.com/user-attachments/assets/d6314824-0cca-4eb3-b6a3-8116fca59541" />
 
 ### Step 7.5 
+<img width="1224" height="227" alt="Screenshot 2026-02-11 at 9 08 04 PM" src="https://github.com/user-attachments/assets/7741f7aa-783f-4eb3-9cd0-70d123a45dbc" />
+
 
 ## Task 8: Reflection Questions 
 
+
+
+
+
+
+
+
+
+
+
+
 ## Task 9
 
+<img width="960" height="137" alt="Screenshot 2026-02-11 at 9 12 37 PM" src="https://github.com/user-attachments/assets/b3236150-fe77-469b-bfc1-ca7fda4b03bb" />
 
 
 
