@@ -38,50 +38,60 @@
 ### Step 3 
 <img width="826" height="150" alt="Screenshot 2026-02-11 at 8 32 53 PM" src="https://github.com/user-attachments/assets/9c82a229-3614-4a56-bedd-5194b4ca01c2" />
 
-
+- This command shows all the clusters in the project. 
 ### Step 4 
 <img width="995" height="80" alt="Screenshot 2026-02-11 at 8 33 22 PM" src="https://github.com/user-attachments/assets/91fd24f9-c777-420e-afe9-7e30e72ad27c" />
 
+- This connects kubect1 to the cluster, without this the Kubernetes commands would not know which clusters to control.  
 
 ### Step 5 
 <img width="716" height="76" alt="Screenshot 2026-02-11 at 8 33 48 PM" src="https://github.com/user-attachments/assets/3c5a5e1e-e69b-48bd-bc2e-63fba4fde51f" />
 
+- This command lists worker nodes in the cluster, it confirms the clusster is running and accessible.  
 
 ## Task 4 
 ### Part A
 <img width="547" height="241" alt="Screenshot 2026-02-11 at 8 45 43 PM" src="https://github.com/user-attachments/assets/290bd37c-f3fd-4e7d-97c7-c2aeed03b5a3" />
 
+- This command lists repositories that store container images.  
+
 <img width="959" height="207" alt="Screenshot 2026-02-11 at 8 46 15 PM" src="https://github.com/user-attachments/assets/d79f855a-7949-4b21-a4d3-2cbe2bc03249" />
 
+- This command shows the repository details and the registry URI.
 ### Part B 
 <img width="1208" height="151" alt="Screenshot 2026-02-11 at 8 48 06 PM" src="https://github.com/user-attachments/assets/2c3a22f2-0a71-4a9d-98a0-f4ea110571c4" />
 
+- Thsi command gets the details about my repository.  
 ## Task 5 
 ### Part A
 <img width="1170" height="270" alt="Screenshot 2026-02-11 at 8 49 40 PM" src="https://github.com/user-attachments/assets/54c6a34c-21b4-4f95-857e-ec231072ffc7" />
 
+- This command changes into the folder that contains the products microservice source code.  pwd shows the full path of the directory I am in.  ls lists files in the diretory.  
 ### Part B 
 <img width="1201" height="76" alt="Screenshot 2026-02-11 at 8 50 47 PM" src="https://github.com/user-attachments/assets/824750bc-5fc7-4110-a17d-d38f14ff6470" />
 <img width="826" height="137" alt="Screenshot 2026-02-11 at 8 51 48 PM" src="https://github.com/user-attachments/assets/79213915-ccb4-4fdd-b2e9-8409899430bc" />
 
+- This command navigates to the products microservices.  
 
 ### Part C 
 <img width="1191" height="136" alt="Screenshot 2026-02-11 at 8 52 29 PM" src="https://github.com/user-attachments/assets/f596046d-4272-43c6-9860-5b8b9a901309" />
 
-
+- This command lists all container images in the registry.
 ## Task 6 
 ### Step 1 
 <img width="807" height="93" alt="Screenshot 2026-02-11 at 8 53 21 PM" src="https://github.com/user-attachments/assets/cdb79ae8-1c60-4289-9192-4d59ae924587" />
 
+- Creates a directory for Kubernetes. 
 ### Step 2 
 <img width="948" height="356" alt="Screenshot 2026-02-11 at 8 54 21 PM" src="https://github.com/user-attachments/assets/ee9acf0c-74c5-45a3-98b4-370cb9ab0e07" />
 
-
+- This command views the deployment and service configuration files.  
 ### Step 3 
 <img width="856" height="212" alt="Screenshot 2026-02-11 at 8 54 44 PM" src="https://github.com/user-attachments/assets/51593ef3-aaec-4677-ac01-5aabdda83068" />
 
 <img width="873" height="192" alt="Screenshot 2026-02-11 at 8 55 16 PM" src="https://github.com/user-attachments/assets/15b33539-e134-4ac2-8cf9-79ac8965a5e1" />
 
+- These two commmands work to deploy the products microservices to kubernetes. 
 ## Part 2A
 ### Step 1 
 <img width="901" height="79" alt="Screenshot 2026-02-11 at 8 55 57 PM" src="https://github.com/user-attachments/assets/2d24d486-72b8-4110-88e5-25703f128384" />
@@ -90,19 +100,23 @@
 ### Step 2 
 <img width="816" height="50" alt="Screenshot 2026-02-11 at 8 56 17 PM" src="https://github.com/user-attachments/assets/85cb16b7-0a63-4bde-8bec-d056ec863a6a" />
 
+- Shows the deployment status 
 
 ###  Step 3 
 <img width="807" height="49" alt="Screenshot 2026-02-11 at 8 56 41 PM" src="https://github.com/user-attachments/assets/6a0ab61e-5bc6-4d37-a4ec-f3692539121a" />
 
+- Shows ReplicaSets for the products app.
 
 ### Step 4 
 <img width="849" height="89" alt="Screenshot 2026-02-11 at 8 57 10 PM" src="https://github.com/user-attachments/assets/09eb41b0-ff1b-46e9-8901-404c7a79b884" />
 
+- This lists pods with custom columns showing name, status, IP, and node.  
 
 ### Step 5 
 <img width="912" height="33" alt="Screenshot 2026-02-11 at 8 58 59 PM" src="https://github.com/user-attachments/assets/9b2ba07d-b800-48f3-8686-0d55a7fcc53c" />
 <img width="845" height="91" alt="Screenshot 2026-02-11 at 8 59 35 PM" src="https://github.com/user-attachments/assets/7c698194-8034-4b01-a1db-87255be313d3" />
 
+- The first command deletes a pod, which Kubernetes will the automatically recreate it.  The second command shows the status of the pods after deleting one, and the one Kubernete recreated.  
 
 ### Step 6 
 #### A. 
@@ -112,35 +126,43 @@
 #### B. 
 <img width="983" height="32" alt="Screenshot 2026-02-11 at 9 00 32 PM" src="https://github.com/user-attachments/assets/6efc99a1-4aa6-40f5-bda7-4ace19495c45" />
 
+- Shows which pods the service routes to. 
 
 #### C. 
 <img width="985" height="46" alt="Screenshot 2026-02-11 at 9 00 51 PM" src="https://github.com/user-attachments/assets/5d05b211-da27-4ccb-9d3e-7a3a211617d2" />
 
-
+- shows the label selector used by the deployment.  
 ## Part 2B
 ### Step 7 
 <img width="1187" height="51" alt="Screenshot 2026-02-11 at 9 01 22 PM" src="https://github.com/user-attachments/assets/ec8a6894-ecac-4679-a88e-18ba13e4ffd8" />
 
+- This command creates test pod for DNS queries  
+
 <img width="763" height="41" alt="Screenshot 2026-02-11 at 9 01 46 PM" src="https://github.com/user-attachments/assets/e3d47e6d-3f9c-49ae-8cdf-ac5d30c5efee" />
 
+- This command reshows the pod running after the firts command.  
 ### Step 8 
 <img width="1208" height="62" alt="Screenshot 2026-02-11 at 9 02 11 PM" src="https://github.com/user-attachments/assets/99bdd9e1-c89a-413b-951b-2dda3ce3d83b" />
 
+- This pod creates a test pod for HTTP requests.  
 <img width="775" height="47" alt="Screenshot 2026-02-11 at 9 02 30 PM" src="https://github.com/user-attachments/assets/edab46bf-cda3-405b-a23a-48af6499d288" />
 
+-This command shows the pod again running after the HTTP requests.  
 ### Step 9 
 <img width="1019" height="333" alt="Screenshot 2026-02-11 at 9 03 12 PM" src="https://github.com/user-attachments/assets/4f6c3b13-1e60-43a9-b2c7-0517c59679e3" />
 
 <img width="1204" height="98" alt="Screenshot 2026-02-11 at 9 03 34 PM" src="https://github.com/user-attachments/assets/430ccb7a-cd9d-4226-a805-1b0b07ac9069" />
 
+- The first command tests DNS lookup using the short service name.  Kubernetes DNS will resolve this to the services cluster IP address.  The second command Tests DNS lookup using the fully qualified domain name.  
 ### Step 10 
 #### A. 
 <img width="1172" height="35" alt="Screenshot 2026-02-11 at 9 04 04 PM" src="https://github.com/user-attachments/assets/1c715eac-4946-423a-925d-39a18235cc98" />
 
+- This command makes and HTTP request to list all products, the -s flag means "silent". 
 #### B. 
 <img width="1221" height="52" alt="Screenshot 2026-02-11 at 9 04 25 PM" src="https://github.com/user-attachments/assets/3c97d42b-2cd0-47af-be80-31533cb775ce" />
 
-
+- retrieves a specific product ID.  It tests that the API can return individual product details.  
 ## Task 7
 ### Step 7.1
 <img width="706" height="582" alt="Screenshot 2026-02-11 at 9 05 32 PM" src="https://github.com/user-attachments/assets/3283fb7b-dd51-4d7a-98c0-9951aee1d8d2" />
@@ -153,6 +175,7 @@
 ### Step 7.3 
 <img width="1119" height="357" alt="Screenshot 2026-02-11 at 9 06 54 PM" src="https://github.com/user-attachments/assets/5b78afa5-31d5-4b85-bf3a-df335ff4a96f" />
 
+- This command tests DNS resolution for the orders microservice.  
 
 ### Step 7.4 
 <img width="1201" height="132" alt="Screenshot 2026-02-11 at 9 07 36 PM" src="https://github.com/user-attachments/assets/d6314824-0cca-4eb3-b6a3-8116fca59541" />
@@ -160,6 +183,7 @@
 ### Step 7.5 
 <img width="1224" height="227" alt="Screenshot 2026-02-11 at 9 08 04 PM" src="https://github.com/user-attachments/assets/7741f7aa-783f-4eb3-9cd0-70d123a45dbc" />
 
+- Lists all pods labeled with app=orders, it verifies that the orders microservice pods are running.  
 
 ## Task 8: Reflection Questions 
 1.  Explain the relationship between Deployment, ReplicaSet, and Pods.
