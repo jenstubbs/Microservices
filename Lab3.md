@@ -1,12 +1,15 @@
 # Lab 3: Deploying Microservices with core Kubernetes
 
 ## Task 1 
-
 ### Step 1 
 <img width="519" height="126" alt="Screenshot 2026-02-11 at 8 17 41 PM" src="https://github.com/user-attachments/assets/be14f934-6316-4d2f-8c89-00ae19c3dbb4" />
 
+- This command shows which google accounts are logged into and active, ensuring you have permission to do this.  
+
 ### Step 2
 <img width="1002" height="120" alt="Screenshot 2026-02-11 at 8 19 05 PM" src="https://github.com/user-attachments/assets/18ca5330-28cc-4586-adb5-ea49171f615b" />
+
+- This command displays the current project being used. 
 
 ### Step 3 
 - Not Needed 
@@ -14,18 +17,23 @@
 ### Step 4 
 <img width="628" height="88" alt="Screenshot 2026-02-11 at 8 21 23 PM" src="https://github.com/user-attachments/assets/c5ec928a-8449-47b5-b79c-3909d33640c1" />
 
+- I first used the command gcloud config set compute/zone us-east1-b, to change my zone.  The screenshot shows the second command to list the zone I am in.  Kubernetes run in regions and zones and it is imprtant for later steps to know your zone and set it correctly.  
+
 
 ## Task 2 
 <img width="669" height="155" alt="Screenshot 2026-02-11 at 8 22 01 PM" src="https://github.com/user-attachments/assets/7c20af32-37a6-4b9a-bbc9-71f30b920777" />
 
-
+- This command downloads the lab application source code, which is important as you need containerized services to deploy kubernetes.  
 ## Task 3 
 ### Step 1 
 <img width="1104" height="105" alt="Screenshot 2026-02-11 at 8 24 56 PM" src="https://github.com/user-attachments/assets/521fe349-7b0a-4ddd-81a0-3b5f19be9d83" />
 
+- This command enables cloud resource manager, kubernetes engine, and artifact registry.  We need this because Google Cloud API's are disabled and must be enabled.  
+- The second command is for ensuring the container registry is enabled.  
 ### Step 2 
 <img width="1103" height="304" alt="Screenshot 2026-02-11 at 8 32 21 PM" src="https://github.com/user-attachments/assets/f65fe8e6-dc62-4bec-a808-67f0b01ef06d" />
 
+- This command creates a GKE cluster with 3 nodes, e2 medium machines, 30GB dicks, and a specific zone for them.  
 
 ### Step 3 
 <img width="826" height="150" alt="Screenshot 2026-02-11 at 8 32 53 PM" src="https://github.com/user-attachments/assets/9c82a229-3614-4a56-bedd-5194b4ca01c2" />
@@ -154,7 +162,9 @@
 
 
 ## Task 8: Reflection Questions 
-
+1.  Explain the relationship between Deployment, ReplicaSet, and Pods.
+2.   How does a Kubernetes Service (ClusterIP) enable stable access to a microservice?
+3.    What is an EndpointSlice and why is it important?
 
 
 
