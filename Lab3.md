@@ -191,23 +191,21 @@
 
 ## Task 8: Reflection Questions 
 1.  Explain the relationship between Deployment, ReplicaSet, and Pods.
+   - The relationship between Deployment, ReplicaSet, and Pods is similar to that of a hierarchy.  Deployment controls the state of the application and specifies the container image to run, the number of repllicas, and how updates operate.  The ReplicaSet ensures there is the correct number of pods running, so if one is deleted or crashes, it automatically creates a new one.  Pods are considered ephemeral because they are temporary.  In this lab, we deleted a pod and Kubernetes automatically created a new pod with a different name and IP address.  
 2.   How does a Kubernetes Service (ClusterIP) enable stable access to a microservice?
+     - Clients use Service name instead of Pod IPs because Pod IPs change when Pods restart, the service name remains consistent and Kubernetes automatically routes traffic to the correct Pods.  Pods are given labels which the Service then uses to match the labels.  Kubernetes find all matching Pods and routes traffic from the Service to those Pods.  If Services did not exist, communication would break, you would have manually scale pods up or down, and there would be no load balancing.  
 3.    What is an EndpointSlice and why is it important?
-
-
-
-
-
-
-
-
-
-
+    - An EndpointSlice is a Kubernetes object that keeps track of the actual Pod IP.  It allows for efficent traffic from the Service to the correct Pods.  An EndPointSlice contains Pod IP addresses, Ports, protocol information, and the readiness of endpoints.  It relates to the service and the Pods using labels.  Kubernetes creates or updates EndpointSlices that store the IPs.  In 7.5 we were able to see comparison of the Pod IPs, the Service ClusterIP, and EndpointSlice adresses.  
 
 ## Task 9
 
 <img width="960" height="137" alt="Screenshot 2026-02-11 at 9 12 37 PM" src="https://github.com/user-attachments/assets/b3236150-fe77-469b-bfc1-ca7fda4b03bb" />
 
 - This task shows the clean up command, which basically delets everything thats been created to ensure it does not keep running.  
+
+
+## Diagram 
+
+![IMG_0102](https://github.com/user-attachments/assets/dc6998fd-bfd7-49af-8a36-5433cb99b0b9)
 
 
