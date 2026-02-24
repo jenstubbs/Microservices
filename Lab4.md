@@ -149,30 +149,63 @@ not needed
 
 
 ## Task 5 
-
 ### Step 1
+<img width="819" height="51" alt="Screenshot 2026-02-23 at 6 57 43 PM" src="https://github.com/user-attachments/assets/a1ce0f58-957e-4c40-adc7-d7ef31c191cd" />
+
+
 
 ### Step 2 
+<img width="505" height="93" alt="Screenshot 2026-02-23 at 6 58 07 PM" src="https://github.com/user-attachments/assets/8b65e90b-b56b-48ef-bb67-acf6bfbaaaf3" />
 
-### Step 3 
 
-### Step 4 
+
+### Step 3
+
+<img width="803" height="423" alt="Screenshot 2026-02-23 at 6 58 46 PM" src="https://github.com/user-attachments/assets/c84ca75b-98ec-49b8-b02b-fd86495528f2" />
+
+
+### Step 4
+
+<img width="796" height="67" alt="Screenshot 2026-02-23 at 6 59 02 PM" src="https://github.com/user-attachments/assets/4ade816f-aefc-4ca9-8d1c-12b82a05792a" />
+
+
+<img width="803" height="52" alt="Screenshot 2026-02-23 at 6 59 19 PM" src="https://github.com/user-attachments/assets/6d8c77e0-9137-45d0-accd-f1ca33129223" />
+
+
+<img width="763" height="78" alt="Screenshot 2026-02-23 at 6 59 35 PM" src="https://github.com/user-attachments/assets/00f3b8c4-234f-47cb-9c6a-e8e9907251f9" />
+
+
 
 ### Step 5 
+<img width="803" height="197" alt="Screenshot 2026-02-23 at 7 00 00 PM" src="https://github.com/user-attachments/assets/f72259b4-e235-4825-bd0b-0d1178f6171c" />
+
 
 ### Step 6 
+<img width="811" height="224" alt="Screenshot 2026-02-23 at 7 00 22 PM" src="https://github.com/user-attachments/assets/662cf391-d70d-43a1-abf7-f8e76831bf24" />
+
+
 
 ### Step 7 
 
+<img width="802" height="75" alt="Screenshot 2026-02-23 at 7 00 43 PM" src="https://github.com/user-attachments/assets/440eec8e-4a59-478a-9398-112bf2b33d4e" />
+
+
 ### Step 8 
+
+<img width="852" height="205" alt="Screenshot 2026-02-23 at 7 01 10 PM" src="https://github.com/user-attachments/assets/d579592a-80d4-473d-8cb0-afef0b6f355f" />
+
 
 ### Step 9 
 
+<img width="851" height="257" alt="Screenshot 2026-02-23 at 7 01 48 PM" src="https://github.com/user-attachments/assets/7845859e-e98a-4e8d-b7fe-66a0c75c5af3" />
+
+
 ### Step 10 
+<img width="836" height="52" alt="Screenshot 2026-02-23 at 7 02 15 PM" src="https://github.com/user-attachments/assets/09c83c93-6193-425b-9547-77e798f0eebf" />
 
 ## Task 6 
-
 ### Step 1 
+
 
 ### Step 2 
 
