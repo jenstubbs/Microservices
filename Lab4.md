@@ -139,23 +139,24 @@
 
 <img width="860" height="181" alt="Screenshot 2026-02-24 at 3 30 02 PM" src="https://github.com/user-attachments/assets/e6ce28ea-8855-45ed-b25f-60d6cde43e7b" />
 
-
+- This command allows you to watch the progress of rolling update and reports when desired replicas are updated.  Gives you a view to see if there are errors or if anything is failing.  
 
 ### Step 4 
 
 <img width="867" height="195" alt="Screenshot 2026-02-24 at 3 31 00 PM" src="https://github.com/user-attachments/assets/d042a87f-c9bd-443a-a459-0b8369d90ef5" />
 
-
+- This command taps the service repeatedly to see which version responds.  Kubernetes load balances across all matching pods.  
 
 ### Step 5 
 
 <img width="839" height="74" alt="Screenshot 2026-02-24 at 3 31 23 PM" src="https://github.com/user-attachments/assets/34e412b5-d32e-41cd-802b-5bac5ec66b9f" />
 
+- This commmand continues the rollout after we paused it earlier.  Kubernetes resumes shifting replicas until the rollout ends, overall finished the release.  
 
 ### Step 6 
 <img width="853" height="98" alt="Screenshot 2026-02-24 at 3 40 52 PM" src="https://github.com/user-attachments/assets/2c7e7323-a21e-4e5e-b538-af7f373f8256" />
 
-
+- This command rolls back to the previous deployment.  Kubernetes sets the deployment pod template back.  it is almost like a light switch to change from V2 to V1. 
 
 
 
@@ -165,32 +166,25 @@
 
 <img width="845" height="106" alt="Screenshot 2026-02-24 at 3 41 35 PM" src="https://github.com/user-attachments/assets/fbb3ecc6-bb77-4c0c-8623-f7f13d99f5ac" />
 
-
+- This first command shows the path for the my-repository.  This was apart of the problem I was having with the project as my-repository was in a previous lab and I made a new one for this lab.  In turn I went back an rebuilt my-repository for lab 4 and it ended up working.  The second command shows which image each pod is running.  It allows you to ensure before moving on.  
 
 ## Task 5 
 ### Step 1
 
 <img width="858" height="47" alt="Screenshot 2026-02-24 at 3 42 18 PM" src="https://github.com/user-attachments/assets/db5ee30f-4445-474e-a0f8-71d2a7eb5d92" />
 
-
+- Againa this command shows the path getting to my-repositry and how it is running on V1.  
 
 ### Step 2 
 <img width="842" height="95" alt="Screenshot 2026-02-24 at 3 42 49 PM" src="https://github.com/user-attachments/assets/c6ed720f-ed98-4da1-8e56-22382baa777d" />
 
+- This command prints working directory and shows where you are in your own system.  It is important because you want to know where you are in your machine.  ls is to list the files you are working with and as we can see all the .yaml files we have.  
 
-
-
-### Step 3
-
-<img width="816" height="411" alt="Screenshot 2026-02-24 at 3 43 22 PM" src="https://github.com/user-attachments/assets/dca0fb92-ec8e-43a3-a552-a7e89360cac4" />
-
-
-
-
+ 
 ### Step 4
 <img width="855" height="171" alt="Screenshot 2026-02-24 at 3 44 11 PM" src="https://github.com/user-attachments/assets/cdbda9d7-f09f-4496-997f-fd8898800ece" />
 
-
+- The second command creates a canary deployment running v2 alongside.  Kubernetes is another deployment with labels, the idea here is that you release a small bit of it to users first.  
 
 
 
@@ -198,29 +192,30 @@
 <img width="857" height="125" alt="Screenshot 2026-02-24 at 3 45 02 PM" src="https://github.com/user-attachments/assets/48639651-8772-4550-9296-b5c44b82b70e" />
 
 
+- This command checks which pods are stable and which are canary.  It is important as canary relies on labels to distinguish versions.  
 
 ### Step 6 
 <img width="851" height="212" alt="Screenshot 2026-02-24 at 3 45 31 PM" src="https://github.com/user-attachments/assets/448e5bd0-7cad-498e-9249-68353d264e05" />
 
-
+- This command is simiilar to the rpvious, but also adds the IP adress of each one, allowing us to really see via labels.  
 
 ### Step 7 
 <img width="851" height="81" alt="Screenshot 2026-02-24 at 3 45 59 PM" src="https://github.com/user-attachments/assets/eac53b8a-5ca3-4948-a52d-40bccf0cdf66" />
 
-
-
+- This command sees the pods IP service.  EndPointSlice controller publishes endpoints for the service.  It confirms canary pods are included in servic routing. 
 
 
 ### Step 8 
 <img width="852" height="133" alt="Screenshot 2026-02-24 at 3 46 24 PM" src="https://github.com/user-attachments/assets/0c9dda25-cfad-4af4-af77-4e7178cfa1ae" />
 
+- This command asks to shows pod name and IP address, track label, and the container image.  
 
 
 
 ### Step 9 
 <img width="850" height="256" alt="Screenshot 2026-02-24 at 3 47 43 PM" src="https://github.com/user-attachments/assets/d71c05ed-37b5-49f0-8327-c25e925e4af3" />
 
-
+- This command is sending repeated requests to obersve mixed routing.  It demonstrates traffic splitting through the shared service selector.  
 
 
 
@@ -228,62 +223,72 @@
 ### Step 10 
 <img width="858" height="210" alt="Screenshot 2026-02-24 at 3 48 33 PM" src="https://github.com/user-attachments/assets/0a4b8a88-f807-4101-8dbd-03c207261045" />
 
+- This first command deletes canary, to terminate the pods.  Gives a clean rollback of the canary so we can move on to the next idea.  The second command calls the pods to confirm to us they deleted.  
 
 
 
 ## Task 6 
 <img width="800" height="140" alt="Screenshot 2026-02-24 at 3 49 57 PM" src="https://github.com/user-attachments/assets/f69142ec-7655-4afa-9a82-26707b840e44" />
 
+- This command acts a quick check to ensure you are running the correct pods and that they are healthy.  
 
 ### Step 1 
 <img width="852" height="181" alt="Screenshot 2026-02-24 at 4 00 09 PM" src="https://github.com/user-attachments/assets/7d95a4c5-05c5-4340-a119-f897780997dc" />
+
+- This commmand calls into the pods to call from within the pods to ensure that the request reached it and is repsonding appropriately.  
 
 
 ### Step 2 
 
 <img width="867" height="439" alt="Screenshot 2026-02-24 at 4 01 12 PM" src="https://github.com/user-attachments/assets/6281c6d4-bb3c-4caf-978a-001ec801c437" />
 
+- The first command in this to label the deployment pods as blue, this chnages the pod template and triggers new rollouts.  The blue/green labels help direct the traffic.  The second command forces new pods, kubernetes deploys a template to trigger ReplicaSet, all of this ensures the pods get the new label.  
+
 
 ### Step 3 
 <img width="846" height="455" alt="Screenshot 2026-02-24 at 4 02 11 PM" src="https://github.com/user-attachments/assets/ffb14142-4dc8-498c-97e1-2ab3e5b723ff" />
 
-
+- This command is shwoing all the orders pods and telling which track eahc image is running.  Kubernetes filters pods with label app=orders.  The second command is to only send traffic to pods labeled app = orders and track = blue.  Kubernetes updates the service selector and kubernetes recalculates which pods match.  The third command shows exaclty what selector the service is using.  The last command is to hit orders-service 10 times and print the HTTP status code.   
 
 ### Step 4 
 <img width="853" height="556" alt="Screenshot 2026-02-24 at 4 04 17 PM" src="https://github.com/user-attachments/assets/046e1b0b-6e15-4d78-abd3-0fbe352ce397" />
 
-
+- This command is creating a brand  new Kubernetes deployment manifest for the green environment.  When applied it cretaes a second set of orders that can exists side by side.  The second command creates this green deployment in Kubernetes.  This shows now you have green pods running.  The third command is to wait until green is fully healtyh and running.  Kubernetes checks on replicas, the pods, and rollouts.  
 
 ### Step 5 
 <img width="845" height="182" alt="Screenshot 2026-02-24 at 4 05 54 PM" src="https://github.com/user-attachments/assets/17042e9e-c530-46d4-816a-2cbbef5b0c71" />
 
-
+- This command lists all the pods with label app=orders and print sout pod name, track label and contianer image version.  
 
 
 ### Step 6 
 <img width="848" height="181" alt="Screenshot 2026-02-24 at 4 06 22 PM" src="https://github.com/user-attachments/assets/bce17926-d40b-4697-b3a4-24e765dc95ec" />
 
-
+- This commmand runs inside http-client pod.  Kubernetes asks the node running http-clientto start a process inside to output what is going on inside.  This is the testing of the network from inside the cluster.  
 
 ### Step 7 
 <img width="844" height="89" alt="Screenshot 2026-02-24 at 4 06 56 PM" src="https://github.com/user-attachments/assets/67205f53-4b56-40a2-b86d-fd9520f3b2ca" />
 
 
+- The first command in this is the traffic switch from the blue to green.  Kubernetes is updating the service object and recomputing the EndpointSlice for the pods to match the selector.  Showing both versions cna be running at the same time, which shows how easy it is to run back and forth between blue and green.  The second command shows which labels the service is using to pick pods.  
+
 
 ### Step 8 
 <img width="846" height="228" alt="Screenshot 2026-02-24 at 4 07 37 PM" src="https://github.com/user-attachments/assets/6efb0d3d-d2f7-4a5d-92c4-6f9b81b1cb3f" />
 
-
+- This is simialr to the one we ran before to call from inside the cluster to confirm it responds successfully.  Kubernetes DNS resolves orders-service to service ClusterIP.  The second command it to show which versions actually responded to the call.  
 
 ### Step 9 
 <img width="838" height="272" alt="Screenshot 2026-02-24 at 4 08 09 PM" src="https://github.com/user-attachments/assets/57ffe785-d322-4a17-bdf7-65b6eec66a97" />
 
-
+- This first command calls from isndie the lcuster to askk what service version.  Kubernetes routes the request through the service to which pods match the service selector.  The second command is the switch to stop sending traffic to green and switch to the blue track.  The third command verifies the service still works after the switch.  
 
 ### Step 10 
 
 
 <img width="859" height="91" alt="Screenshot 2026-02-24 at 4 08 52 PM" src="https://github.com/user-attachments/assets/298ebb20-4a90-4db9-9a39-932362e431d3" />
+
+- This command lists all the pods and shows their names, whether they are blue or green, and what contianer image they are running.  Kubernetes returns all pods labeled with app = orders.  
 
 ## Task 7 (Reflection Questions) 
 
@@ -296,5 +301,5 @@
 ## Task 8 
 <img width="838" height="156" alt="Screenshot 2026-02-24 at 4 14 27 PM" src="https://github.com/user-attachments/assets/4af23146-2757-45d7-8590-30855831002e" />
 
-
+- This command is the cleanup to delete your gke-cluster.  This is important to ensure you do not have pods in your cluster continuously running.  
 
