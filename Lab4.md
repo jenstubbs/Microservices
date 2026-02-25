@@ -292,11 +292,11 @@
 
 ## Task 7 (Reflection Questions) 
 
-1.) 
-2.) 
-3.) 
-4.) 
-5.) 
+1.) A dark launch is when a new version of a service is deployed and fully running in production, with no real user traffic.  It gives oppurutnity to test it internally.  This is differnt from canary because canary uses a small percentage of real user traffic to test.  It is different from blue-green as blue green is two distinct environment being switch on and off.  Advanatges of dark launch is it can be observed in rela time, engineers can do different kinds of testing, and takes out the risk of bugs or errors to actual users.  In turn it also requires extra resources and can increae complexity across two different systems.  Engineers may choose dakr launch for for major changes that may be risky or complex.  
+2.) Rolling updates reduce downtime, but dor not get rid of it completely.  You can still encounter downtime if the new version fails, limited resources, and the new pods are not ready in time.  The assumptions that must be true is that old and new versions must be compatible, databases schemas should not break older pods, and configuration changes must not invaliadate older versions.  Rolling updates are preffered with horizontally scalabe systems and high availability API's.  
+3.) Limiting traffic reduce risks by only allowing a small subset of users to fail. Engineers can detect problems early.  Monitoring is required because canary requires observability with error rates, latency metrics, and memory usage.  Some disadvantages would be increasing complexity, strong monitoring capabilities, and sometimes bugs may only appear under a full traffic load.   
+4.) Instant rollback is possible with blue-green deployment because the ability to have two full environments to exist at the same time, rollback is really just witching from environment to environment.  This increases infrastructure cost as you need the blue and green environment to run at the same time, doubling resources.  It is safer for a hard cutover when the new version is not backward compatible, major architecture changes, and consistency across all users at once.  It is often used for database schema chnages as schema changes can break older versions.  Blue-green allows a fully compatible new environment, validating it, and switching traffic only when it is ready.  
+5.) A/B testing is for experimentaing, not deployment.  It is used to compare two variations of a feature to measure user behaivor and which version performs better.  Used for UI design, feature variations, or pricing changes.  It is not used for bug fixes as it is not meant for stability or safety.  It is to measure user response.  it is focused on optimizing product outcomes.  
 
 ## Task 8 
 <img width="838" height="156" alt="Screenshot 2026-02-24 at 4 14 27 PM" src="https://github.com/user-attachments/assets/4af23146-2757-45d7-8590-30855831002e" />
