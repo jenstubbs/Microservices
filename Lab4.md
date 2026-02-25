@@ -4,26 +4,25 @@
 ### Step 1 
 <img width="541" height="120" alt="Screenshot 2026-02-23 at 4 56 54 PM" src="https://github.com/user-attachments/assets/014b5623-c5c5-4f49-81c0-cef8755ca20e" />
 
-
+- This command shows which google identity the CLI will use.  Gcloud reads stored Oauth credentials and without it wrong accounts will show permission errors. 
 
 ### Step 2 
 
 <img width="853" height="212" alt="Screenshot 2026-02-23 at 4 57 33 PM" src="https://github.com/user-attachments/assets/db2942f9-5d9e-4dd7-8e39-a88cc2cda55f" />
 
-
-### Step 3 
-not needed 
+- This command shows which project gcloud is targetting.  It reads the active configuration to which API calls go to.  If incorrect, your clusters will go to the wrong place.  
 
 
 ### Step 4 
 
 <img width="840" height="245" alt="Screenshot 2026-02-23 at 5 01 07 PM" src="https://github.com/user-attachments/assets/c64ff224-0dab-4fcc-8be1-70f91f9f2675" />
 
+- The first command is to set the default zone for your resources, whereas the second one is to verify the zone.  It is important to update and ensure your location as without the correct location you may end up with "cluster not found" as GKE commands assume a zone. 
 
 ### Step 5 
 <img width="822" height="77" alt="Screenshot 2026-02-23 at 5 03 21 PM" src="https://github.com/user-attachments/assets/35a580c5-8423-44b0-9f9c-587f63c0448e" />
 
-
+- This command is basically turning on certain features for the project.  GCP activates API's so the project can call them.  In this command we can call IAM policy management, creat clusters, and store container images.  Without it we really would not be able to do the lab.  
 
 ## Task 1B
 
@@ -31,28 +30,31 @@ not needed
 
 <img width="860" height="345" alt="Screenshot 2026-02-23 at 5 09 59 PM" src="https://github.com/user-attachments/assets/7c747d50-eddd-4ebf-b63f-afbf4f758b97" />
 
-
+- The first command was to show if we have any clusters running and as you can see there was no response telling us we are able to move forward, avoiding cretaing the same thing voer again.  The second command is to create a Kubernetes cluster.  We have GKE provisions, setting up control plane, and configuring networks.  Without the the cluster, there would be no where to run th epods.  
 
 
 ### Step 3 
 
 <img width="612" height="149" alt="Screenshot 2026-02-23 at 5 10 35 PM" src="https://github.com/user-attachments/assets/e256a562-e2a7-41f5-bacc-43b4188307f1" />
 
+- This command confirms the cluster is running and actually exists.  Its important to verify the status before moving forward, so other commands can run smoothly.  
 
 ### Step 4 
 
 <img width="807" height="69" alt="Screenshot 2026-02-23 at 5 11 02 PM" src="https://github.com/user-attachments/assets/bafeb184-357a-4e0f-a238-983595e30d5e" />
 
-
+- This command is to connect Kubectl to this cluster.  it updates the cluster endpoints and authorization plugins.  It gives directions to kubectl to know which cluster to talk to.  
 ### Step 5 
 
 <img width="735" height="76" alt="Screenshot 2026-02-23 at 5 11 36 PM" src="https://github.com/user-attachments/assets/94914245-754f-4437-af69-64f5bfa25297" />
 
+- This command checks if Kubernetes is connecting to your machine.  Kubernetes API returns nodes and if nodes arent ready, pods can't schedule.
 
 ### Step 6 
 
 <img width="490" height="35" alt="Screenshot 2026-02-23 at 5 16 55 PM" src="https://github.com/user-attachments/assets/076b5778-1d93-4b8e-ac7b-2a14c715f9cd" />
 
+- This command checks the artifact registry repo location and without this we would not be able to push anything or push into the wrong place.  
 
 
 ## Task 2 
@@ -60,41 +62,44 @@ not needed
 
 <img width="593" height="92" alt="Screenshot 2026-02-23 at 5 18 04 PM" src="https://github.com/user-attachments/assets/907bcaab-60f5-4d70-bd87-2387b97683d5" />
 
+- cd~ goes to the home directory, and cd gke-microservices-manifests goes to the folder containing the Kubernetes YAML's.  
 ### Step 2 
 <img width="847" height="80" alt="Screenshot 2026-02-23 at 5 18 53 PM" src="https://github.com/user-attachments/assets/f43d025e-bfe5-49de-b829-f9053ef8e109" />
 
-
+- This command declares "run products app" as a deployment.  Kubernetes is calling for the deployment controller to create a ReplicaSet, the ReplicaSet creates pods, and the scheduler places pods on nodes.  It is important becasue these are all steps in the deployment process.  
 
 ### Step 3 
 
 <img width="777" height="45" alt="Screenshot 2026-02-23 at 5 19 18 PM" src="https://github.com/user-attachments/assets/78733bbd-bbfd-4ac1-af30-16d9a760b800" />
 
+- This command is deploying orders.  Kubernetes is creates the object declared inside.  At this point we can see multiple services communicating.  
 
 
 ### Step 4 
 <img width="853" height="109" alt="Screenshot 2026-02-23 at 5 19 44 PM" src="https://github.com/user-attachments/assets/1e0f71be-e7bf-4768-befa-7fab6f4b0e6b" />
 
-
+- This command creates a place whre you can control the cluster.  Kuberetes creats a pod running curl image.  It is important because it tests service discovery from inside the cluster.  
 
 
 ### Step 5 
 
 <img width="702" height="274" alt="Screenshot 2026-02-23 at 5 20 27 PM" src="https://github.com/user-attachments/assets/93329482-1c37-42d3-acfc-0fca37fa1221" />
 
-
+- In this command, this is calliing to show what is running and exposed.  Kubernetes lists deployments, pods, and services.  It health checks and confirms labels.  In my picture, my pods say ImagePullBackOff, which tells me they are not running correctly,  I was able to eventually fix it, but not able to get a picture of it.  
 
 ### Step 6 
 
 <img width="852" height="448" alt="Screenshot 2026-02-24 at 3 23 31 PM" src="https://github.com/user-attachments/assets/b416f826-9a61-45f2-a67b-96925b55303e" />
 
 
+- These commands are very similar in that they are doing the same thing jsut for the proucts and orders which is where they differ.  Overall, they are call products via service DNS.  Kubernetes resolves products and orders to ClusterIP. 
 
 ## Task 3 
 ### Step 1 
 
 <img width="844" height="35" alt="Screenshot 2026-02-24 at 3 24 16 PM" src="https://github.com/user-attachments/assets/b0640101-e25e-4bbf-947a-f1f7cefaab9f" />
 
-
+- This command goes to orders source code because the could build needs the source context to build an image.  
 
 ### Step 2 
 
@@ -103,20 +108,20 @@ not needed
 
 <img width="849" height="563" alt="Screenshot 2026-02-24 at 3 27 36 PM" src="https://github.com/user-attachments/assets/628a1db6-9d5b-4eb1-a607-53dd74787e8e" />
 
-
+- In this command we use the cat server.js to confirm the file chnaged and catch any errors before building.  
 
 
 ### Step 3 
 
 <img width="879" height="364" alt="Screenshot 2026-02-24 at 3 28 28 PM" src="https://github.com/user-attachments/assets/f500e367-6d09-4a70-924c-339b1eb6967b" />
 
-
+- This command verifies your image exists and has tage v2, without it, the push would not have happened and the rollout will pull a missing image casuing the pods to fail.  
 
 ## Task 4 
 ### Step 1 
 <img width="847" height="49" alt="Screenshot 2026-02-24 at 3 29 05 PM" src="https://github.com/user-attachments/assets/1e4bd29e-0714-4b35-8826-95189ebfe00d" />
 
-
+- This command is trying to find what image is the orders deployment currently using.  Kubernetes returns the container image field in the pod template, allwoing you to confirm the baseline.  
 
 
 
@@ -126,6 +131,8 @@ not needed
 
 
 <img width="854" height="80" alt="Screenshot 2026-02-24 at 3 29 37 PM" src="https://github.com/user-attachments/assets/a225d71b-2876-4c93-86b7-dcd6fbd99c2a" />
+
+- The first command is to update the deployments pod template to use V2.  Kubernetes recieves the message to change the template and creats a new ReplicaSet, allowing the release a new verison without downtime.  The second command pauses the rolliut mid flight and kubernetes is stopping the scaling chnages.  It gives time to inspect a partial rollout.  
 
 
 ### Step 3 
