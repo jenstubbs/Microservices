@@ -303,3 +303,7 @@
 
 - This command is the cleanup to delete your gke-cluster.  This is important to ensure you do not have pods in your cluster continuously running.  
 
+
+### Diagrams
+![IMG_0139](https://github.com/user-attachments/assets/0a792f14-0773-4115-b4b1-157d7fc835d0)
+
