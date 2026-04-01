@@ -1,7 +1,7 @@
 ## Phase 2, Hands on submission
 ### Google CloudLab: Building Change Data Capture usnig Dataproc and Cloud Pub/Sub
 
-The Purpose of this lab was to build and end to end change data capture pipeline.  Each task in the lab represents a component of a real time data piepline architecture.  First Pub/Sub was configured to act as the messagig system for stremaing data base change events.  A python script then simulated database changes and published the events to Pub/Sub to represent a data producer.  A service account was created to allow secure communicaiton between services.  A dataproc clsuter was then created to provide a dsitributed spark processing environment.  Lastly, a sprak streaming job was submitted to consume messages from Pub/Sub and process them in real tim.  These events all tie together as they demonstrate event drien dtaa pipelins capture, strema,a nd process data changes in cloud architecture.  
+The Purpose of this lab was to build and end to end change data capture pipeline.  Each task in the lab represents a component of a real time data piepline architecture.  First Pub/Sub was configured to act as the messaging system for stremaing data base change events.  A python script then simulated database changes and published the events to Pub/Sub to represent a data producer.  A service account was created to allow secure communicaiton between services.  A dataproc clsuter was then created to provide a distributed spark processing environment.  Lastly, a spark streaming job was submitted to consume messages from Pub/Sub and process them in real time.  These events all tie together as they demonstrate event driven data pipelines capture, stream, and process data changes in cloud architecture.  
 
 ### Introduction (Task 1)
 #### Step 1 
@@ -94,7 +94,7 @@ This task was the longest task of all the task.  As in this task I submitted a s
 #### Step 4 
 <img width="840" height="49" alt="Screenshot 2026-03-31 at 10 39 11 PM" src="https://github.com/user-attachments/assets/2595f468-0f19-4721-8c82-ffc450c6680d" />
 
-- This step chnaged the directory.  
+- This step changed the directory.  
 
 #### Step 5 
 
@@ -143,10 +143,28 @@ This task was the longest task of all the task.  As in this task I submitted a s
 - This task was the clean up task.  As we do in our labs in class, we must go back in and delete the the resources we made to not be billed in the future.  
 
 
+### Diagram
 
 
+<img width="952" height="691" alt="Screenshot 2026-04-01 at 2 02 30 PM" src="https://github.com/user-attachments/assets/b47a0ce2-ec43-4814-a583-fc653e1d39c7" />
 
 
+### Wrap-Up Questions: 
+1.) How does this connect to Spotify and Event Driven Microservices at Spotify? 
+
+- The CDC pipeline lab connects to Spotify’s event-driven microservices architecture because both systems rely on event streaming to communicate between services. In the lab, database change events were published to Pub/Sub and processed by Dataproc Spark, demonstrating how streaming pipelines process events in real time. Also, Spotify publishes user activity events such as song plays and playlist updates to an event streaming platform, where multiple microservices consume and process the events independently. This architecture allows Spotify to scale its system, decouple services, and process data in real time for analytics and recommendations
+
+2.) Architectural Impact 
+- Event-driven architecture significantly impacts the overall microservices architecture by introducing asynchronous communication through an event streaming platform such as Pub/Sub. Instead of services calling each other directly, services publish events that other services consume independently. This increases system scalability and resilience because services are loosely coupled and can scale independently. However, this architecture also introduces additional complexity, including event ordering, debugging distributed systems, and managing message queues. Overall, the event-driven approach improves scalability and fault tolerance at the cost of increased architectural complexity
+
+3.) Maintainability and Operability
+- The event-driven approach improves maintainability because microservices are loosely coupled and can be developed, tested, and deployed independently. Teams can update individual services without affecting the entire system.  Event-driven systems scale efficiently because consumers can be scaled independently based on event load. However, debugging and troubleshooting become more difficult because events flow asynchronously through messaging systems, making it harder to trace system behavior. As a result, strong monitoring, logging, and observability tools are required to operate event-driven microservices effectively.
+
+4.) Alignment with Microservices Best practices
+- The event-driven approach aligns well with microservices architecture best practices such as loose coupling, service autonomy, and resilience. Services communicate through events rather than direct REST calls, which reduces dependencies between services and allows them to scale independently. Compared to synchronous REST communication, asynchronous event-driven messaging improves scalability and fault tolerance but introduces additional complexity in debugging and event management. 
+
+5.) Recommendations
+- One recommendation would be to incorporate monitoring and observability tools such as Cloud Monitoring or Prometheus to better track event flow and system performance.  Additionally, schema management for events would improve maintainability and compatibility between services.
 
 
-
+### LAB: https://codelabs.developers.google.com/cdc-using-dataproc-cloud-pubsub#6 
