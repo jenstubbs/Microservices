@@ -53,23 +53,68 @@
 #### Step 1 
 <img width="909" height="401" alt="Screenshot 2026-03-31 at 5 50 13 PM" src="https://github.com/user-attachments/assets/a3dc79e4-b935-4030-85dc-4e815c742676" />
 
+<img width="912" height="337" alt="Screenshot 2026-03-31 at 10 19 54 PM" src="https://github.com/user-attachments/assets/b5ade181-b412-4755-a273-ce6a37b97ac2" />
+
 
 #### Task 6 
-#### Step 1 
-#### Step 2 
+#### Step 1
+<img width="905" height="46" alt="Screenshot 2026-03-31 at 10 21 36 PM" src="https://github.com/user-attachments/assets/d5c38b0c-652e-4d5f-8bab-d9a1936881e1" />
+
+<img width="913" height="35" alt="Screenshot 2026-03-31 at 10 25 27 PM" src="https://github.com/user-attachments/assets/21bb53a4-2e0f-45a7-a99a-fdb8fcaa14a4" />
+
+
+#### Step 2
+<img width="770" height="35" alt="Screenshot 2026-03-31 at 10 27 30 PM" src="https://github.com/user-attachments/assets/6214ac66-0f1e-4ed5-89e7-8f787bf42d5a" />
+
+
+
 #### Step 3 
+<img width="785" height="47" alt="Screenshot 2026-03-31 at 10 27 57 PM" src="https://github.com/user-attachments/assets/7f5daf03-52fb-4793-a696-16ff55f9d5b3" />
+
+
 #### Step 4 
+<img width="840" height="49" alt="Screenshot 2026-03-31 at 10 39 11 PM" src="https://github.com/user-attachments/assets/2595f468-0f19-4721-8c82-ffc450c6680d" />
+
+
 #### Step 5 
+
+<img width="903" height="532" alt="Screenshot 2026-03-31 at 10 39 55 PM" src="https://github.com/user-attachments/assets/9ce40589-f772-4ca1-9cd7-06c15fa2927d" />
+
+
+<img width="714" height="93" alt="Screenshot 2026-03-31 at 10 40 24 PM" src="https://github.com/user-attachments/assets/c0dcedfa-224e-41a5-a9f2-9950d9220c11" />
+
+
 #### Step 6 
-#### Step 7 
+
+<img width="914" height="187" alt="Screenshot 2026-03-31 at 10 41 08 PM" src="https://github.com/user-attachments/assets/9a721e59-5af7-4e0d-93c3-e2a4f76ac8b5" />
+
+
+#### Step 7
+<img width="927" height="545" alt="Screenshot 2026-03-31 at 10 42 40 PM" src="https://github.com/user-attachments/assets/ace2f4dd-edd9-4541-8caa-97726baf364c" />
+
+
+
 #### Step 8 
+<img width="913" height="78" alt="Screenshot 2026-03-31 at 10 44 14 PM" src="https://github.com/user-attachments/assets/b3252e12-3526-4110-9a41-ce564965b79a" />
+
+
 #### Step 9 
+
+<img width="924" height="874" alt="Screenshot 2026-03-31 at 10 51 00 PM" src="https://github.com/user-attachments/assets/6dd8a3b3-f6a7-4605-98a9-17a48996c254" />
+
+
 #### Step 10 
+<img width="657" height="190" alt="Screenshot 2026-03-31 at 10 50 25 PM" src="https://github.com/user-attachments/assets/ba4ccd4a-a3a3-444d-ac8d-67a0f5d1db33" />
+
 #### Step 11 
+<img width="913" height="140" alt="Screenshot 2026-03-31 at 10 52 25 PM" src="https://github.com/user-attachments/assets/ac81b8da-bf46-4272-9175-25215fac0cee" />
+
+<img width="908" height="139" alt="Screenshot 2026-03-31 at 10 53 48 PM" src="https://github.com/user-attachments/assets/e22d378c-cd4e-46fe-9352-ccc28b39033a" />
 
 ### Task 7 (Clean-up)
 #### Step 1 
 
+<img width="919" height="213" alt="Screenshot 2026-03-31 at 10 57 16 PM" src="https://github.com/user-attachments/assets/1b34e8ed-1b67-4129-a265-47c79c0ecc69" />
 
 
 
